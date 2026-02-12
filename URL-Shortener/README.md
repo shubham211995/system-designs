@@ -1,52 +1,25 @@
-# URL Shortener System Design
+# URL Shortener
 
-## 🎯 Problem Statement
+This document contains the system design for a scalable URL shortening service.
 
-Design a scalable URL shortening service similar to Bitly.
+## 📂 Structure
 
----
+### HLD
+- Requirements
+- Capacity Estimation
+- Architecture (upcoming)
+- Tradeoffs (upcoming)
 
-## 📌 Functional Requirements
-
-- Generate short URL from long URL
-- Redirect short URL to original URL
-- Support custom alias (optional)
-- Support expiration time (optional)
-- Track number of clicks
-
----
-
-## 📌 Non-Functional Requirements
-
-- High availability
-- Low latency (<100ms redirect)
-- Horizontally scalable
-- Highly reliable
-- Eventual consistency acceptable for analytics
+### LLD
+- Class diagrams
+- Service modeling
+- Concurrency handling
 
 ---
 
-## 📊 Traffic Assumptions
+## Current Status
 
-- 10 Million new URLs per day
-- 100 Million redirects per day
-- 10-year data retention
-
----
-
-## 📌 Out of Scope
-
-- Authentication
-- Advanced analytics dashboard
-- QR code generation
-- Monetization
-- Spam detection
-
----
-
-## 🧠 System Nature
-
-- Read-heavy system
-- Key-value lookup pattern (shortCode → longURL)
-- Eventual consistency acceptable
-- Redirect uses HTTP 302 (Temporary Redirect)
+- Requirements ✅
+- Estimations ✅
+- Architecture ⬜
+- LLD ⬜
