@@ -21,5 +21,5 @@ This document contains the system design for a scalable URL shortening service.
 
 - Requirements ✅
 - Estimations ✅
-- Architecture ⬜
+- Architecture ✅
 - LLD ⬜

@@ -72,3 +72,25 @@ Flow:
 Ensures:
 - Redirect path remains low latency
 - No synchronous DB update during redirect
+
+---
+
+## 🔁 Request Flow
+
+### 🔹 URL Creation
+
+1. Client sends POST /create
+2. App server generates ID
+3. ID encoded to Base62 shortCode
+4. Store in DB
+5. Return short URL
+
+---
+
+### 🔹 Redirect Flow
+
+1. Client requests GET /{shortCode}
+2. App checks Redis
+   - If hit → return 302 redirect
+   - If miss → fetch from DB → populate cache → return 302
+3. Publish click event asynchronously
