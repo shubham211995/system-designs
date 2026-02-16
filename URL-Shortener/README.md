@@ -7,8 +7,8 @@ This document contains the system design for a scalable URL shortening service.
 ### HLD
 - Requirements
 - Capacity Estimation
-- Architecture (upcoming)
-- Tradeoffs (upcoming)
+- Architecture
+- Tradeoffs
 
 ### LLD
 - Class diagrams
@@ -22,4 +22,5 @@ This document contains the system design for a scalable URL shortening service.
 - Requirements ✅
 - Estimations ✅
 - Architecture ✅
+- Tradeoffs ✅
 - LLD ⬜
