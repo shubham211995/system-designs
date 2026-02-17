@@ -11,9 +11,10 @@ This document contains the system design for a scalable URL shortening service.
 - Tradeoffs
 
 ### LLD
+- API Contract
+- DB Schema
 - Class diagrams
-- Service modeling
-- Concurrency handling
+- Sequence flow
 
 ---
 
@@ -23,4 +24,4 @@ This document contains the system design for a scalable URL shortening service.
 - Estimations ✅
 - Architecture ✅
 - Tradeoffs ✅
-- LLD ⬜
+- LLD ✅
